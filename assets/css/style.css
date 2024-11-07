@@ -1,0 +1,292 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+/* Header Styling */
+.contact-button {
+	background-color: #ff5722;
+	color: white;
+	border-radius: 5px;
+	padding: 8px 15px;
+	text-decoration: none;
+}
+
+.contact-button:hover {
+	background-color: #e64a19;
+	text-decoration: none;
+}
+
+.navbar-brand span {
+	color: #ff5722;
+}
+
+.navbar-nav .nav-link {
+	font-size: 16px;
+}
+
+.navbar-toggler-icon {
+	color: black;
+}
+
+.fixed-navi {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-toggler {
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Styling */
+.form-group {
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.form-control {
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 2px;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	transition: border-color 0.3s ease-in-out;
+	line-height: 2;
+}
+
+/* Placeholder styling */
+.form-control::placeholder {
+	text-align: center;
+	line-height: 2;
+	color: #ccc;
+}
+
+/* Input field when focused */
+.form-control:focus {
+	background-color: transparent;
+	border-color: #e6eef6;
+	box-shadow: none;
+}
+
+.form-group label {
+	position: absolute;
+	top: 8px;
+	left: 15px;
+
+	font-size: 16px;
+	color: #edeff1;
+	pointer-events: none;
+	transition: 0.3s;
+}
+
+.form-control:focus ~ label,
+.form-control:not(:placeholder-shown) ~ label {
+	top: -17px;
+	left: 0;
+	font-size: 12px;
+	color: #ebeff3; /* Light blue color when label moves */
+}
+
+.btn-orange {
+	background-color: #f8b739;
+	border: none;
+	color: white;
+	padding: 10px 30px;
+	width: 100%;
+	display: block;
+	margin: 20px auto 0;
+	border-radius: 5px;
+}
+
+.btn-orange:hover {
+	background-color: #f1a830;
+}
+
+.content {
+	flex: 1;
+	width: 100%;
+	height: 700px;
+	background-image: url("../images/young-couple-examining-blueprints-with-real-estate-agent-while-buying-new-home\ 1.svg"); /* Background Image URL */
+	background-size: cover;
+	background-position: center;
+	padding: 50px;
+	position: relative;
+}
+
+.content .contact-form {
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	width: 25%;
+	transform: translateY(-50%);
+	background-color: rgba(4, 34, 87, 0.8);
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(183, 181, 181, 0.673);
+	border: 3px solid white;
+	box-sizing: border-box; /* Ensure padding doesn't overlap with border */
+}
+
+.background-container1 {
+	width: 100%;
+	height: 800px; /* You can adjust the height to your desired value */
+	position: relative;
+
+	/* Multiple background images */
+	background: url("../shapes/Ellipse 7.svg") no-repeat top right,
+		url("../shapes/Ellipse 10.svg") no-repeat top left,
+		url("../shapes/Ellipse 8.svg") no-repeat center left;
+
+	background-size: 800px 700px, 100px 200px, 240px 380px;
+
+	background-position: top right, top left, center left;
+}
+.background-container {
+	width: 100%;
+	height: 900px; /* Adjust height as needed */
+	position: relative;
+}
+
+.background-image-1,
+.background-image-2,
+.background-image-3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.background-image-1 {
+	background: url("../shapes/Ellipse 7.svg") no-repeat;
+	background-size: 900px 900px;
+	background-position: top right;
+	margin-top: -200px;
+	z-index: 1; /* Adjust if needed */
+}
+
+.background-image-2 {
+	background: url("../shapes/Ellipse 20.svg") no-repeat;
+	background-size: 100px 200px;
+	/* margin-left: 40px; */
+	background-position: top left;
+	z-index: 2;
+}
+
+.background-image-3 {
+	background: url("../shapes/Ellipse 8.svg") no-repeat;
+	background-size: 240px 380px;
+	margin-top: 100px;
+	background-position: center left;
+	z-index: 3; /* Adjust if needed */
+}
+
+.image-center,
+.image-border {
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
+/* Center Images */
+.image-center {
+	z-index: 2; /* Center images will be on top */
+}
+
+.image-1 {
+	background-image: url("../images/Ellipse\ 11.svg");
+	top: 55%;
+	left: 63%;
+	width: 330px;
+	height: 330px;
+	transform: translate(-50%, -50%);
+}
+
+.image-2 {
+	background-image: url("../images/Ellipse\ 12.svg");
+	top: 40%;
+	left: 83%;
+	width: 250px;
+	height: 250px;
+	transform: translate(-50%, -50%);
+}
+
+.image-3 {
+	background-image: url("../images/Ellipse\ 13.svg");
+	top: 70%;
+	left: 81%;
+	width: 230px;
+	height: 230px;
+	transform: translate(-50%, -50%);
+}
+
+/* Border Images */
+.image-border {
+	z-index: 1; /* Border images will be below center images */
+}
+
+.image-4 {
+	background-image: url("../shapes/Ellipse\ 24.svg");
+	top: 40%;
+	left: 47%;
+	width: 50px;
+	height: 50px;
+	transform: translate(-50%, -50%);
+}
+
+.image-5 {
+	background-image: url("../shapes/Ellipse\ 25-1.svg");
+	top: 78%;
+	left: 52%;
+	width: 25px;
+	height: 25px;
+	transform: translate(-50%, -50%);
+}
+
+.image-6 {
+	background-image: url("../shapes/Ellipse\ 24-1.svg");
+	top: 101%;
+	left: 77%;
+	width: 20px;
+	height: 20px;
+	transform: translate(-70%, -110%);
+}
+/* Optional: Add content inside the background container */
+/* .background-container .content-inside {
+	position: absolute;
+	top: 50%; 
+	left: 10%;
+	transform: translateY(-50%); 
+	color: #ffffff; 
+	font-size: 1.5rem; 
+} */
+/* Footer Styling */
+
+.footer {
+	background-color: #03213e;
+	color: white;
+	padding: 20px 0;
+}
+
+.footer .social-icons a {
+	color: white;
+	margin: 0 10px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+	color: #f8b739;
+}
+
+.footer .center-text {
+	text-align: center;
+	font-weight: bold;
+}
+
+.footer .left-text {
+	text-align: left;
+	font-style: italic;
+}
+
+.footer .right-text {
+	text-align: right;
+}
