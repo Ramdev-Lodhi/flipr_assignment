@@ -30,6 +30,7 @@ Project Management: Admin can add and manage projects.
 Client Management: Admin can add and manage clients.
 View Contact Form Submissions: Admin can see all submitted contact form details.
 View Subscribed Emails: Admin can view all newsletter subscribers.
+Aditional Feature Add: Image cropping .
 
 Tech Stack
 
