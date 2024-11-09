@@ -1,5 +1,8 @@
 # flipr_assignment
 
+Deployment Link : http://3.110.124.122
+
+![alt text](<Screenshot (6).png>)
 Overview
 
 This project implements a full-stack application with a Landing Page and an Admin Panel using CodeIgniter 3 for the backend and HTML/CSS for the frontend. The application allows users to view projects, clients, and subscribe to a newsletter, while admins can manage projects, clients, contact form submissions, and subscriptions.
