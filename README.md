@@ -1,6 +1,6 @@
 # flipr_assignment
 
-AWS Cloud EC2 Deploy
+AWS Cloud EC2<br>
 Deployment Link : http://3.110.124.122
 
 ![alt text](<Screenshot (6).png>)
