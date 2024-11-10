@@ -172,6 +172,7 @@ $('#editProjectModal').on('show.bs.modal', function(event) {
 
         $('form').on('submit', function(e) {
             const editCroppedImage = getCroppedImageData();
+            console.log(editCroppedImage);
             if (editCroppedImage) {
                 $('#edit_cropped_image').val(editCroppedImage);
             }
@@ -182,22 +183,27 @@ $('#editProjectModal').on('show.bs.modal', function(event) {
 // Handle image selection and cropping for Add Project modal
 function loadImage(event) {
     const imageElement = document.querySelector('#imageToCrop');
-    imageElement.src = URL.createObjectURL(event.target.files[0]);
+    const file = event.target.files[0];
 
-    window.cropper = new Cropper(imageElement, {
-        aspectRatio: 16 / 9,
-        viewMode: 1,
-        responsive: true,
-    });
     if (file) {
+
         if (window.cropper) {
             window.cropper.destroy();
         }
+
+        imageElement.src = URL.createObjectURL(file);
+
+        window.cropper = new Cropper(imageElement, {
+            aspectRatio: 16 / 9,
+            viewMode: 1,
+            responsive: true,
+        });
 
         function getCroppedImageData() {
             const croppedCanvas = window.cropper.getCroppedCanvas();
             return croppedCanvas ? croppedCanvas.toDataURL() : null;
         }
+
 
         $('form').on('submit', function(e) {
             const croppedImage = getCroppedImageData();

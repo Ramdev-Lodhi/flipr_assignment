@@ -1,5 +1,6 @@
 # flipr_assignment
 
+AWS Cloud EC2 Deploy
 Deployment Link : http://3.110.124.122
 
 ![alt text](<Screenshot (6).png>)
@@ -37,3 +38,5 @@ Tech Stack
 Backend: CodeIgniter 3 (PHP Framework)
 Frontend: HTML, CSS
 Database: MySQL (or any relational database)
+
+AWS Cloud Service : Deploy Project AWS EC2
